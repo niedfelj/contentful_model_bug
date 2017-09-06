@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/contentful/contentful_model.git
+  revision: 3b324ea82e43e1a366f498c0bd2e868ae5c8b38e
+  branch: master
+  specs:
+    contentful_model (0.2.0)
+      activesupport
+      contentful (~> 2.0)
+      contentful-management (~> 1.0)
+      redcarpet
+      require_all
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -61,24 +73,13 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
-    contentful (0.12.0)
-      http (~> 1.0)
-      json (~> 1.8)
+    contentful (2.1.3)
+      http (> 0.8, < 3.0)
       multi_json (~> 1)
     contentful-management (1.8.1)
       http (> 1.0, < 3.0)
       json (~> 1.8)
       multi_json (~> 1)
-    contentful_model (0.2.0)
-      activesupport
-      contentful (~> 0.9)
-      contentful-management (~> 1.0)
-      redcarpet
-      require_all
-    contentful_rails (0.4.1)
-      contentful_model (~> 0.2)
-      rails (>= 4.2)
-      redcarpet (~> 3.2)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.6.1)
@@ -86,7 +87,7 @@ GEM
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    http (1.0.4)
+    http (2.2.2)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 1.0.1)
@@ -213,7 +214,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
-  contentful_rails
+  contentful_model!
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
