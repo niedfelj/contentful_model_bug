@@ -53,7 +53,7 @@ SystemStackError: stack level too deep
  => {"query"=>#<ContentfulModel::Query:0x007f9d633ce558 @parameters={}, @referenced_class=Contentful::Article>, "content_type_id"=>"article", "management"=>#<ContentfulModel::Management:0x007f9d633c7fa0 @configuration={:api_url=>"api.contentful.com", :uploads_url=>"upload.contentful.com", :api_version=>"1", :secure=>true, :default_locale=>"en-US", :gzip_encoded=>false, :logger=>false, :log_level=>1, :raise_errors=>true, :dynamic_entries=>[], :proxy_host=>nil, :proxy_port=>nil, :proxy_username=>nil, :proxy_password=>nil, :max_rate_limit_retries=>1, :max_rate_limit_wait=>60, :application_name=>nil, :application_version=>nil, :integration_name=>"contentful_model", :integration_version=>"0.2.0"}, @logger=false, @access_token="REMOVED", @dynamic_entry_cache={:article=>Contentful::Management::DynamicEntry[article]}, @version=nil, @organization_id=nil, @content_type_id=nil, @zero_length=false>} 
 ```
 
-# You can put logging code into .rvm/gems/ruby-2.4.1/gems/activesupport-5.1.3/lib/active_support/core_ext/object/json.rb to see just keep calling instance_values (line 54) 
+You can put logging code into .rvm/gems/ruby-2.4.1/gems/activesupport-5.1.3/lib/active_support/core_ext/object/json.rb to see just keep calling instance_values (line 54) 
 
 
 
