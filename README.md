@@ -39,9 +39,11 @@ article.save
 
 article = Contentful::Article.create(title: 'test', section: section)
 
-# It seems that there is something preventing updates to the section (the weird thing is that other fields work, including categories)
-# The bug seems related to the fact that Contentful::Article.as_json just keeps recursively calling as_json, because the activesupport
-# as_json for an Object calls instance_values.as_json (which is a hash, but keeps containing a reference to the class that returns the same hash @referenced_class)
+```
+
+It seems that there is something preventing updates to the section (the weird thing is that other fields work, including categories)
+The bug seems related to the fact that Contentful::Article.as_json just keeps recursively calling as_json, because the activesupport
+as_json for an Object calls instance_values.as_json (which is a hash, but keeps containing a reference to the class that returns the same hash @referenced_class)
 
 ```
 2.4.1 :015 > Contentful::Article.as_json
