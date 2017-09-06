@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 #gem 'contentful_rails'
 gem 'contentful_model', github: 'contentful/contentful_model', branch: 'master'
+gem 'contentful_bootstrap'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

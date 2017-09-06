@@ -1,0 +1,1030 @@
+{
+  "version": 3,
+  "contentTypes": [
+    {
+      "id": "article",
+      "name": "Article",
+      "displayField": "title",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol"
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol"
+        },
+        {
+          "id": "publishedAt",
+          "name": "Published At",
+          "type": "Date"
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol"
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "section",
+          "name": "Section",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "categories",
+          "name": "Categories",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "summary",
+          "name": "Summary",
+          "type": "Text"
+        },
+        {
+          "id": "featuredImage",
+          "name": "Featured Image",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "featuredVideo",
+          "name": "Featured Video",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "modules",
+          "name": "Modules",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "author",
+      "name": "Author",
+      "displayField": "fullName",
+      "fields": [
+        {
+          "id": "fullName",
+          "name": "Full Name",
+          "type": "Symbol"
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol"
+        },
+        {
+          "id": "authorBio",
+          "name": "Author Bio",
+          "type": "Text"
+        }
+      ]
+    },
+    {
+      "id": "brand",
+      "name": "Brand",
+      "displayField": "companyName",
+      "fields": [
+        {
+          "id": "companyName",
+          "name": "Company name",
+          "type": "Text"
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "companyDescription",
+          "name": "Description",
+          "type": "Text"
+        },
+        {
+          "id": "website",
+          "name": "Website",
+          "type": "Symbol"
+        },
+        {
+          "id": "twitter",
+          "name": "Twitter",
+          "type": "Symbol"
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "type": "Symbol"
+        },
+        {
+          "id": "phone",
+          "name": "Phone #",
+          "type": "Array",
+          "items": {
+            "type": "Symbol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "category",
+      "name": "Category",
+      "displayField": "title",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol"
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol"
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol"
+        }
+      ]
+    },
+    {
+      "id": "cover",
+      "name": "Cover",
+      "displayField": "title",
+      "fields": [
+        {
+          "id": "categoryLabel",
+          "name": "Category Label",
+          "type": "Symbol"
+        },
+        {
+          "id": "coverImage",
+          "name": "CoverImage",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol"
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol"
+        },
+        {
+          "id": "month",
+          "name": "Month",
+          "type": "Symbol"
+        },
+        {
+          "id": "issue",
+          "name": "Issue",
+          "type": "Number"
+        },
+        {
+          "id": "link",
+          "name": "Link",
+          "type": "Text"
+        },
+        {
+          "id": "modules",
+          "name": "Modules",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "products",
+          "name": "Products",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "featuredImage",
+      "name": "Featured Image",
+      "displayField": "imageCredit",
+      "fields": [
+        {
+          "id": "image16x9",
+          "name": "image16x9",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "image4x3",
+          "name": "image4x3",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "image1x1",
+          "name": "image1x1",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "imageCover",
+          "name": "image cover",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "imageCredit",
+          "name": "image credit",
+          "type": "Text"
+        }
+      ]
+    },
+    {
+      "id": "listings__listing_5",
+      "name": "Module Listings 5",
+      "fields": [
+        {
+          "id": "article",
+          "name": "Article",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "imageOverride",
+          "name": "Image Override",
+          "type": "Link",
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "id": "module_11",
+      "name": "Module 11 (Subject Card 4x)",
+      "displayField": "title",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol"
+        },
+        {
+          "id": "linkText",
+          "name": "Link Text",
+          "type": "Symbol"
+        },
+        {
+          "id": "link",
+          "name": "Link",
+          "type": "Symbol"
+        },
+        {
+          "id": "tintColor",
+          "name": "Tint Color",
+          "type": "Symbol"
+        }
+      ]
+    },
+    {
+      "id": "module_12",
+      "name": "Module 12 (Article Card 4x)",
+      "displayField": "titleOverride",
+      "fields": [
+        {
+          "id": "article",
+          "name": "Article",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "imageOverride",
+          "name": "Image Override",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "titleOverride",
+          "name": "Title Override",
+          "type": "Symbol"
+        },
+        {
+          "id": "subtitleOverride",
+          "name": "Subtitle Override",
+          "type": "Text"
+        }
+      ]
+    },
+    {
+      "id": "module_25",
+      "name": "Module 25 (Instagram)",
+      "fields": [
+        {
+          "id": "photoCount",
+          "name": "Photo Count",
+          "type": "Integer"
+        }
+      ]
+    },
+    {
+      "id": "module_sr1",
+      "name": "Module SR1 (Generic Text Block)",
+      "displayField": "body",
+      "fields": [
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text"
+        }
+      ]
+    },
+    {
+      "id": "module_wrapper_3x",
+      "name": "Module Wrapper 3x",
+      "fields": [
+        {
+          "id": "modules",
+          "name": "Modules",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "module_wrapper_4x",
+      "name": "Module Wrapper 4x",
+      "fields": [
+        {
+          "id": "modules",
+          "name": "Modules",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product",
+      "displayField": "title",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol"
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol"
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol"
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text"
+        },
+        {
+          "id": "featuredImage",
+          "name": "Featured Image",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "images",
+          "name": "Images",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "tags",
+          "name": "Tags",
+          "type": "Array",
+          "items": {
+            "type": "Symbol"
+          }
+        },
+        {
+          "id": "categories",
+          "name": "Categories",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "price",
+          "name": "Price",
+          "type": "Number"
+        },
+        {
+          "id": "brand",
+          "name": "Brand",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "quantity",
+          "name": "Quantity",
+          "type": "Integer"
+        },
+        {
+          "id": "sku",
+          "name": "SKU",
+          "type": "Symbol"
+        },
+        {
+          "id": "color",
+          "name": "Color",
+          "type": "Symbol"
+        },
+        {
+          "id": "shopifyId",
+          "name": "Shopify ID",
+          "type": "Integer"
+        },
+        {
+          "id": "spreeId",
+          "name": "Spree ID",
+          "type": "Integer"
+        },
+        {
+          "id": "affiliateLink",
+          "name": "Affiliate Link",
+          "type": "Text"
+        }
+      ]
+    },
+    {
+      "id": "product_wrapper_6x",
+      "name": "Product Wrapper 6x",
+      "fields": [
+        {
+          "id": "products",
+          "name": "Products",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "section",
+      "name": "Section",
+      "displayField": "title",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol"
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol"
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol"
+        },
+        {
+          "id": "color",
+          "name": "Color",
+          "type": "Symbol"
+        },
+        {
+          "id": "categories",
+          "name": "Categories",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        }
+      ]
+    }
+  ],
+  "assets": [
+
+  ],
+  "entries": {
+    "category": [
+      {
+        "sys": {
+          "id": "7zZYgp81DUOaK2Asimm4km"
+        },
+        "fields": {
+          "title": "Giveaways",
+          "slug": "giveaways",
+          "subtitle": "contests and giveaway items"
+        }
+      },
+      {
+        "sys": {
+          "id": "6cBESeAwHCoMucSc6uWI8o"
+        },
+        "fields": {
+          "title": "Entertaining",
+          "slug": "entertaining",
+          "subtitle": "articles about entertaining"
+        }
+      },
+      {
+        "sys": {
+          "id": "3SYFi3RYtioeYcA0uk8S0e"
+        },
+        "fields": {
+          "title": "Others",
+          "slug": "others",
+          "subtitle": "Others"
+        }
+      },
+      {
+        "sys": {
+          "id": "2FoVFc66pO8SAkmUisg2OU"
+        },
+        "fields": {
+          "title": "Q+A",
+          "slug": "q-a",
+          "subtitle": "Reader questions and our answers."
+        }
+      },
+      {
+        "sys": {
+          "id": "367BeZXrywWi8wks4WKwAG"
+        },
+        "fields": {
+          "title": "Girl About Town",
+          "slug": "girl-about-town",
+          "subtitle": "events and happenings"
+        }
+      },
+      {
+        "sys": {
+          "id": "2PdYnfsqHKq8qcqOGKic20"
+        },
+        "fields": {
+          "title": "Makeup Tutorials",
+          "slug": "makeup-tutorials",
+          "subtitle": "recreate our signature makeup looks from the cover"
+        }
+      },
+      {
+        "sys": {
+          "id": "36J5OvYxdekeAGoGowmSyM"
+        },
+        "fields": {
+          "title": "Styled By",
+          "slug": "styled-by",
+          "subtitle": "shop our limited edition collabs"
+        }
+      },
+      {
+        "sys": {
+          "id": "3oiyr2By1qKSKYuMgQsoGa"
+        },
+        "fields": {
+          "title": "Placeholder Travel Guides",
+          "slug": "placeholder-travel-guides",
+          "subtitle": "eat, see, shop by city"
+        }
+      },
+      {
+        "sys": {
+          "id": "6zxRxK2UPSYEG42SMCwCU8"
+        },
+        "fields": {
+          "title": "BTS",
+          "slug": "bts",
+          "subtitle": "a peek inside our cover shoots"
+        }
+      },
+      {
+        "sys": {
+          "id": "2udQLeKf68c66sYi0s2GCw"
+        },
+        "fields": {
+          "title": "Hair Tutorials",
+          "slug": "hair-tutorials",
+          "subtitle": "recreate our signature hair looks from the cover"
+        }
+      },
+      {
+        "sys": {
+          "id": "4FIV31hE8ggm2ki4mkCkOW"
+        },
+        "fields": {
+          "title": "People",
+          "slug": "people",
+          "subtitle": "introducing our influencers"
+        }
+      },
+      {
+        "sys": {
+          "id": "5Jc6CfFFLiSCMueG0qumYO"
+        },
+        "fields": {
+          "title": "Out From Under: Under 100",
+          "slug": "out-from-under-under-100",
+          "subtitle": "roundups under $100"
+        }
+      },
+      {
+        "sys": {
+          "id": "15gtnwaX7CESwcEeMsAcYA"
+        },
+        "fields": {
+          "title": "Makeover",
+          "slug": "makeover",
+          "subtitle": "The elements of the before and the after--reader makeovers"
+        }
+      },
+      {
+        "sys": {
+          "id": "1Y5CHp2qkoKcG6cS28escI"
+        },
+        "fields": {
+          "title": "Fashion Spread",
+          "slug": "fashion-spread",
+          "subtitle": "10-12 image fashion spread"
+        }
+      },
+      {
+        "sys": {
+          "id": "8BLTiSQnEkYUC8A0sKCUC"
+        },
+        "fields": {
+          "title": "Taresheet",
+          "slug": "taresheet",
+          "subtitle": "interactive, shareable, shoppable, customizable moodboards"
+        }
+      },
+      {
+        "sys": {
+          "id": "6cXSWGjgvSWko6CAY6AoEu"
+        },
+        "fields": {
+          "title": "Day In The Life",
+          "slug": "day-in-the-life",
+          "subtitle": "24 hours with our influencers"
+        }
+      },
+      {
+        "sys": {
+          "id": "TPRFo2yZ66Y4sCmcAY2AU"
+        },
+        "fields": {
+          "title": "Stories",
+          "slug": "stories",
+          "subtitle": "insider details"
+        }
+      },
+      {
+        "sys": {
+          "id": "6DtZzbou1q2YaGakycMgkq"
+        },
+        "fields": {
+          "title": "Places",
+          "slug": "places",
+          "subtitle": "lifestyle spreads by city"
+        }
+      },
+      {
+        "sys": {
+          "id": "2GSLYEXlYIuyGWq0UOIw4U"
+        },
+        "fields": {
+          "title": "Art",
+          "slug": "art",
+          "subtitle": "wallpaper from THE RAPPORT"
+        }
+      },
+      {
+        "sys": {
+          "id": "36906Tc7jWWSgm0UawOOqA"
+        },
+        "fields": {
+          "title": "Uncovered",
+          "slug": "uncovered",
+          "subtitle": "The cover spread including video and BTS deets"
+        }
+      },
+      {
+        "sys": {
+          "id": "198Utri3aWyYEkS4kAMUEg"
+        },
+        "fields": {
+          "title": "Editor's Note",
+          "slug": "editors-note",
+          "subtitle": "a note from Tamara"
+        }
+      },
+      {
+        "sys": {
+          "id": "2lWEY2pKX2QEokU4uGmGKu"
+        },
+        "fields": {
+          "title": "S+R Live",
+          "slug": "sr-live",
+          "subtitle": "Live from S+R"
+        }
+      },
+      {
+        "sys": {
+          "id": "4JLHmeiO3YACc8EsUGaWIo"
+        },
+        "fields": {
+          "title": "Beauty Shop",
+          "slug": "beauty-shop",
+          "subtitle": "beauty articles based on trends"
+        }
+      },
+      {
+        "sys": {
+          "id": "2wPlJCFrXSae004mkkuccI"
+        },
+        "fields": {
+          "title": "Food",
+          "slug": "food",
+          "subtitle": "recipe cards"
+        }
+      },
+      {
+        "sys": {
+          "id": "6w3ehcy5S8W2YoIiC4Kcim"
+        },
+        "fields": {
+          "title": "Hot Launch",
+          "slug": "hot-launch",
+          "subtitle": "what's launching + debuting right now"
+        }
+      },
+      {
+        "sys": {
+          "id": "3HpJ0P3UZyU4MUg2aySEq8"
+        },
+        "fields": {
+          "title": "The Rapport",
+          "slug": "the-rapport",
+          "subtitle": "12 items paired with art"
+        }
+      },
+      {
+        "sys": {
+          "id": "47JaUMvwgEoUoykEGymQWq"
+        },
+        "fields": {
+          "title": "Penned By",
+          "slug": "penned-by",
+          "subtitle": "articles written by notables"
+        }
+      },
+      {
+        "sys": {
+          "id": "43Zioel3KEoWgOacAUCmSg"
+        },
+        "fields": {
+          "title": "Things",
+          "slug": "things",
+          "subtitle": "Things"
+        }
+      }
+    ],
+    "section": [
+      {
+        "sys": {
+          "id": "6U0qjo6J9KSEo4KIawwcOM"
+        },
+        "fields": {
+          "title": "Fashion",
+          "slug": "fashion",
+          "categories": [
+            {
+              "linkType": "Entry",
+              "id": "36906Tc7jWWSgm0UawOOqA"
+            },
+            {
+              "linkType": "Entry",
+              "id": "43Zioel3KEoWgOacAUCmSg"
+            },
+            {
+              "linkType": "Entry",
+              "id": "3HpJ0P3UZyU4MUg2aySEq8"
+            },
+            {
+              "linkType": "Entry",
+              "id": "1Y5CHp2qkoKcG6cS28escI"
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "id": "2CmKPOR1ziiASwieayOk2G"
+        },
+        "fields": {
+          "title": "Video",
+          "slug": "video",
+          "categories": [
+            {
+              "linkType": "Entry",
+              "id": "2udQLeKf68c66sYi0s2GCw"
+            },
+            {
+              "linkType": "Entry",
+              "id": "2PdYnfsqHKq8qcqOGKic20"
+            },
+            {
+              "linkType": "Entry",
+              "id": "6zxRxK2UPSYEG42SMCwCU8"
+            },
+            {
+              "linkType": "Entry",
+              "id": "4FIV31hE8ggm2ki4mkCkOW"
+            },
+            {
+              "linkType": "Entry",
+              "id": "3SYFi3RYtioeYcA0uk8S0e"
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "id": "3F2vhUYHJYs82MMsWoY0ak"
+        },
+        "fields": {
+          "title": "Beauty",
+          "slug": "beauty",
+          "categories": [
+            {
+              "linkType": "Entry",
+              "id": "2udQLeKf68c66sYi0s2GCw"
+            },
+            {
+              "linkType": "Entry",
+              "id": "2PdYnfsqHKq8qcqOGKic20"
+            },
+            {
+              "linkType": "Entry",
+              "id": "4JLHmeiO3YACc8EsUGaWIo"
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "id": "6KSRtnjHfGueIIuE2aiWco"
+        },
+        "fields": {
+          "title": "Notebook",
+          "slug": "notebook",
+          "categories": [
+            {
+              "linkType": "Entry",
+              "id": "198Utri3aWyYEkS4kAMUEg"
+            },
+            {
+              "linkType": "Entry",
+              "id": "47JaUMvwgEoUoykEGymQWq"
+            },
+            {
+              "linkType": "Entry",
+              "id": "TPRFo2yZ66Y4sCmcAY2AU"
+            },
+            {
+              "linkType": "Entry",
+              "id": "367BeZXrywWi8wks4WKwAG"
+            },
+            {
+              "linkType": "Entry",
+              "id": "6cXSWGjgvSWko6CAY6AoEu"
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "id": "2hzTTgWP2ou4SOeiSycewi"
+        },
+        "fields": {
+          "title": "Your Story",
+          "slug": "your-story",
+          "categories": [
+            {
+              "linkType": "Entry",
+              "id": "2lWEY2pKX2QEokU4uGmGKu"
+            },
+            {
+              "linkType": "Entry",
+              "id": "2FoVFc66pO8SAkmUisg2OU"
+            },
+            {
+              "linkType": "Entry",
+              "id": "15gtnwaX7CESwcEeMsAcYA"
+            },
+            {
+              "linkType": "Entry",
+              "id": "7zZYgp81DUOaK2Asimm4km"
+            },
+            {
+              "linkType": "Entry",
+              "id": "8BLTiSQnEkYUC8A0sKCUC"
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "id": "2Wz6Yc8DkQaKWA8omeicmY"
+        },
+        "fields": {
+          "title": "Lifestyle + Tips",
+          "slug": "lifestyle-tips",
+          "categories": [
+            {
+              "linkType": "Entry",
+              "id": "6DtZzbou1q2YaGakycMgkq"
+            },
+            {
+              "linkType": "Entry",
+              "id": "3oiyr2By1qKSKYuMgQsoGa"
+            },
+            {
+              "linkType": "Entry",
+              "id": "2GSLYEXlYIuyGWq0UOIw4U"
+            },
+            {
+              "linkType": "Entry",
+              "id": "2wPlJCFrXSae004mkkuccI"
+            },
+            {
+              "linkType": "Entry",
+              "id": "6cBESeAwHCoMucSc6uWI8o"
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "id": "3Y8DqULft6sMS4CEMAeIOk"
+        },
+        "fields": {
+          "title": "Need It Now",
+          "slug": "need-it-now",
+          "categories": [
+            {
+              "linkType": "Entry",
+              "id": "5Jc6CfFFLiSCMueG0qumYO"
+            },
+            {
+              "linkType": "Entry",
+              "id": "36J5OvYxdekeAGoGowmSyM"
+            },
+            {
+              "linkType": "Entry",
+              "id": "6w3ehcy5S8W2YoIiC4Kcim"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
